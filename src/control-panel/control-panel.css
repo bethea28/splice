@@ -1,0 +1,19 @@
+.control-stop {
+  width: 20px;
+  height: 20px;
+  border: solid blue;
+}
+.control-play {
+  width: 20px;
+  height: 20px;
+  border: solid blue;
+}
+.control-bpm {
+  width: 30px;
+  height: 20px;
+  border: solid blue;
+}
+.control-sequences {
+  width: 135px;
+  height: 24px;
+}

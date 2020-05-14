@@ -1,0 +1,16 @@
+.mpc-button {
+  display: flex;
+  justify-content: center;
+  border: solid red;
+  width: 35px;
+  height: 60px;
+  border-radius: 10%;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+.mpc-button-dot {
+  width:10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 100%;
+}

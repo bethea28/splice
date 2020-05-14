@@ -1,2 +1,0 @@
-# splice
-Created with CodeSandbox
