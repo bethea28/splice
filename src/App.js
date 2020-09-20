@@ -56,24 +56,24 @@ export default class App extends React.Component {
           <PadContainer
             // presetValue={this.state.presetValue}
             // presetMode={this.state.presetMode}
-            // padAmount={[1, 2, 3, 4, 5, 6, 7, 8]}
-            padAmount={8}
+            padAmount={[1, 2, 3, 4, 5, 6, 7, 8]}
+            // padAmount={8}
             instrumentName={'KICK'}
           />
           <PadContainer
             // presetValue={this.state.presetValue}
             // presetMode={this.state.presetMode}
             // pressed={this.state.pressed}
-            // padAmount={[1, 2, 3, 4, 5, 6, 7, 8]}
-            padAmount={8}
+            padAmount={[1, 2, 3, 4, 5, 6, 7, 8]}
+            // padAmount={8}
             instrumentName='SNARE'
           />
           <PadContainer
             // presetMode={this.state.presetMode}
             // onClick={this.handleButtonPress}
             // pressed={this.state.pressed}
-            // padAmount={[1, 2, 3, 4, 5, 6, 7, 8]}
-            padAmount={8}
+            padAmount={[1, 2, 3, 4, 5, 6, 7, 8]}
+            // padAmount={8}
             instrumentName='OPEN HAT'
           />
           {/* <PadContainer instrumentName="OPEN HAT" />

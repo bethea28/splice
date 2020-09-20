@@ -13,26 +13,7 @@ export default class Pads extends React.Component {
     }
     console.log('constructor')
   }
-  // componentDidMount = () => {
-  //   console.log('did  mount')
-  //   let final = []
-  //   for (let i = 0; i < 8; i++) {
-  //     let count = i
-  //     final.push(
-  //       <MPCButton
-  //         handleButtonPress={() => this.handleButtonPress(i)}
-  //         // presetValue={this.props.presetValue}
-  //         // presetMode={this.props.presetMode}
-  //         pressed={i === this.state.index ? true : false}
-  //       />
-  //     )
-  //   }
-  //   this.setState({ finalButtons: final })
-  // }
-  // componentDidUpdate(prevProps, prevState) {
-  //   console.log('did update')
-  //   // this.setState({ index: prevState.index })
-  // }
+
   shouldComponentUpdate(nextProps, nextState) {
     console.log('props', this.props)
     return (
@@ -60,17 +41,6 @@ export default class Pads extends React.Component {
   render() {
     console.log('pad start', this.state.index)
 
-    let finalButtons = []
-    for (let i = 0; i < this.props.padAmount; i++) {
-      finalButtons.push(
-        <MPCButton
-          handleButtonPress={() => this.handleButtonPress(i)}
-          // presetValue={this.props.presetValue}
-          // presetMode={this.props.presetMode}
-          pressed={i === this.state.index ? true : false}
-        />
-      )
-    }
     return (
       <div
         className='pads-container'
@@ -86,7 +56,7 @@ export default class Pads extends React.Component {
         >
           {this.props.instrumentName}
         </h5>
-        {/* {this.props.padAmount.map((a, b) => {
+        {this.props.padAmount.map((a, b) => {
           return (
             <MPCButton
               handleButtonPress={() => this.handleButtonPress(b)}
@@ -95,8 +65,7 @@ export default class Pads extends React.Component {
               pressed={b === this.state.index ? true : false}
             />
           )
-        })} */}
-        {finalButtons}
+        })}
         {/* <MPCButton
           handleButtonPress={() => this.handleButtonPress("button2")}
           presetValue={this.props.presetValue}
